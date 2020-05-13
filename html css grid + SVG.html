@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div.page {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 20px 2fr 7fr 20px;
+            grid-template-areas:
+                "menu header"
+                "menu mainContent"
+                "menu secondaryContent"
+                "footer footer";
+
+        }
+        div.header {
+            font-weight:bolder;
+            font-family:Arial, Helvetica, sans-serif;
+            background-color:rgb(104, 59, 209);
+            grid-area: header;
+        }
+        div.menu {
+            font-weight:bolder;
+            font-family:Arial, Helvetica, sans-serif;
+            background-color:rgb(18, 105, 62);
+            grid-area:menu;
+        }
+        div.mainContent {
+            white-space: pre-wrap;
+            font-family:monospace;
+            font-size: large;
+            color: rgb(44, 212, 81);
+            background-color:rgb(48, 14, 65);
+            grid-area: mainContent;
+        }
+        div.secondaryContent {
+            background-color: lightpink;
+        }
+        div.footer{
+            background-color:lightgrey;
+            grid-area: footer;
+        }
+
+        @media only screen and (max-width: 600px) {
+            div.page {
+            grid-template-columns: 1fr;
+            grid-template-rows: 20px 1fr 4fr 20px;
+            grid-template-areas:
+                "header"
+                "mainContent"
+                "footer";
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div> 
+        <div class="mainContent">
+            Lorem ipsum quia dolor sit amet
+
+            Lorem ipsum quia dolor sit amet
+
+            Lorem ipsum quia dolor sit amet
+            
+            L̩̋or̜̕ê͟m ip̣͑s̯͑u̥͒͐͟ḿ̩ q̢̽ų̛̱̺̻̆̽͠i̘̙̋͝a̬̱͇͂͂̿ d̵̡̠̭̱͓͓͕̗̖͔̊̓̽̌̾̈́̅͑̈́̄͋̋͌͆̀̌̚ͅo̶̯̼̪̝̩̪̣͉̪̳͕͑̓͠l̴̨̡̩͕̤̪̲̜͚͖̻͕͙̭̱͗͗́̅̈́̏o̴̡̡͈̰̰͙͇͙̰͙̫̦̲̻̗̜̻̪̳̙̞̮͕̾̌͒̎̈́́́̈́̇̆͒̑́̊̂̐́͑̔̃́̂̄͘͜͜͠r̸͖͔͌͗̋̿͊̑̓̈́͛́̍̕͝͝ ̵̨̡̛͖̺̝̬͖̬̱̖̱̜̖̮͉̮̌̌̅̐̍͐͊̑͊̾̐̏͋̆́̔͘ͅş̵̡͙̭̗̠̬̤̼̥̩̯͍̻̪̭͚̍̈͆̑̃̔̌̃̇̌͗͊̂̀͝͝ͅi̸̛̻͚̐̉̎̉̐́̈́́̏̃͊̓̏̑̂͌͋̉͐̕͘̕͝͝t̶̡̧͙̭̬̣̫̩̭͎̞̠̥͖̣͙͉̖̜͕̥̭͕͙̅̈́̿̆͆̓̇͊͊́̔̆͛̓͐͒̚͝͝ͅ ̸̡̫͖̟͙̤̔̉̑̿̓̈́́̈́̒̃͑̋͘̕͝ͅą̸̯͖̗̳̺̖͍͎̺̟̭̺̪̯̩̘̜̭̞̭̲̱̩͋̿̒̀̑͐̊͛͛̎͗̌̋̎̍̊̈́̈́͜͝͝͝m̸̨͉͙̜͖͎͍̫͔̠͔̫̠̊̋̀̈́́̎̈̀̿̍̋́̃͜͝ę̷̛͈̩̪̠̱̖̣̥̍̀̇̈́̽̐͆͆͗̈́̌̕̕͘ͅṯ̷̡̫͇̱̯̣͛́̽̾̅̀̊̀̒͑͗́̇̐̂̆͆̃̎͋̍̚̕͠͝
+        </div>
+        <div class="secondaryContent">
+            <!-- snowman -->
+            <svg width="600" height="600">
+                <!-- body -->
+                <circle cx="395" cy="300" r="95" stroke="lightgrey" stroke-width="3" fill="lightgrey"/>
+                <circle cx="385" cy="290" r="90" stroke="lightgrey" stroke-width="6" fill="white"/>
+
+                <circle cx="405" cy="200" r="80" stroke="lightgrey" stroke-width="3" fill="lightgrey"/>
+                <circle cx="395" cy="190" r="75" stroke="lightgrey" stroke-width="6" fill="white"/>
+
+                <circle cx="400" cy="100" r="60" stroke="lightgrey" stroke-width="3" fill="lightgrey"/>
+                <circle cx="390" cy="90" r="55" stroke="lightgrey" stroke-width="6" fill="white"/>
+
+                <!-- arms -->
+                <line x1="340" y1="180" x2="300" y2="100" style="stroke:rgb(117, 69, 15);stroke-width:4"/>
+                <line x1="300" y1="100" x2="270" y2="94" style="stroke:rgb(117, 69, 15);stroke-width:4"/>
+                
+                <line x1="530" y1="150" x2="440" y2="200" style="stroke:rgb(117, 69, 15);stroke-width:4"/>
+                <line x1="530" y1="150" x2="555" y2="150" style="stroke:rgb(117, 69, 15);stroke-width:4"/>
+
+                <!-- face -->
+                <img src="F:\Users\Nep\Pictures\snips\Annotation 2020-04-13 032123.png"
+                    style="position:relative; left:-250px; top:-476px; width:80pxpx; height:80px;"
+                />
+
+                <!-- emotions -->
+                <a href="♥" onclick="return false;"></a>
+
+            </svg>
+        </div>
+        <div class="footer">Created using Windows Movie Maker | © Microsoft 2000</div>
+    </div>
+
+</body>
+</html>
